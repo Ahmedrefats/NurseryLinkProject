@@ -1,0 +1,29 @@
+### Get all nurseries
+GET https://localhost:5001/api/nurseries
+
+### Create a new nursery
+POST https://localhost:5001/api/nurseries
+Content-Type: application/json
+
+{
+  "name": "Happy Kids",
+  "address": "Cairo",
+  "phone": "01012345678"
+}
+
+### Get by id
+GET https://localhost:5001/api/nurseries/1
+
+### Update
+PUT https://localhost:5001/api/nurseries/1
+Content-Type: application/json
+
+{
+  "id": 1,
+  "name": "Happy Kids Updated",
+  "address": "Giza",
+  "phone": "01087654321"
+}
+
+### Delete
+DELETE https://localhost:5001/api/nurseries/1
